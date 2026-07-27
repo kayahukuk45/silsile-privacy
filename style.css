@@ -1,0 +1,63 @@
+/* Silsile web sayfaları — uygulamanın "sıcak kağıt" kimliği (2026-07 redesign). */
+:root {
+  --paper-top: #f6ecd6; --paper: #f1e3c5; --paper-deep: #e8d6b0;
+  --card: #fdf7e9; --card-edge: #d9c49a;
+  --ink: #3a2c1e; --ink-soft: #6b5844; --ink-muted: #9c8a6e;
+  --star: #f0b429; --star-edge: #c98f12; --good: #4c9d63;
+  --sans: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; }
+body {
+  color: var(--ink); font-family: var(--sans); line-height: 1.65;
+  background: linear-gradient(180deg, var(--paper-top), var(--paper) 45%, #e9d9b8 100%);
+  background-attachment: fixed; min-height: 100vh; padding: 0 20px;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 720px; margin: 0 auto; padding: 52px 0 90px; }
+
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.brand .mark {
+  display: grid; place-items: center; width: 44px; height: 44px; flex: none;
+  border-radius: 13px; background: var(--star); border: 2px solid var(--star-edge);
+  border-bottom-width: 5px; font-size: 1.25rem;
+}
+.brand h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; }
+.lede { color: var(--ink-soft); font-size: 1.05rem; font-weight: 700; }
+.updated { color: var(--ink-muted); font-size: .82rem; margin-bottom: 30px; }
+
+h2 { font-size: 1.18rem; font-weight: 800; color: var(--ink);
+     letter-spacing: -0.01em; margin: 34px 0 10px; }
+p { margin: 10px 0; color: var(--ink-soft); }
+ul { margin: 10px 0 10px 4px; padding-left: 20px; }
+li { margin: 7px 0; color: var(--ink-soft); }
+li b, p b { color: var(--ink); font-weight: 700; }
+
+.card {
+  background: var(--card); border: 2px solid var(--card-edge); border-bottom-width: 5px;
+  border-radius: 18px; padding: 18px 22px; margin: 20px 0;
+}
+.card p:first-child { margin-top: 0; } .card p:last-child { margin-bottom: 0; }
+strong.good { color: var(--good); font-weight: 800; }
+
+a { color: var(--star-edge); font-weight: 700; }
+a:hover { color: var(--ink); }
+
+.mailto {
+  display: inline-block; margin-top: 6px; padding: 12px 22px; border-radius: 15px;
+  background: var(--star); border: 2px solid var(--star-edge); border-bottom-width: 5px;
+  color: var(--ink); font-weight: 800; text-decoration: none;
+}
+.mailto:hover { color: var(--ink); filter: brightness(1.05); }
+
+.nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 26px 0 0; }
+.nav a {
+  padding: 8px 16px; border-radius: 999px; background: var(--card);
+  border: 2px solid var(--card-edge); color: var(--ink-soft); text-decoration: none;
+  font-size: .9rem;
+}
+
+footer {
+  margin-top: 44px; padding-top: 20px; border-top: 2px solid var(--card-edge);
+  color: var(--ink-muted); font-size: .84rem;
+}
+code { background: #3a2c1e14; padding: 1px 6px; border-radius: 5px; font-size: .88em; }

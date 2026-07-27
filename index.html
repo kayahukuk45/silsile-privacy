@@ -4,79 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Silsile — Gizlilik Politikası</title>
-<style>
-  :root {
-    --night-deep: #0b0e1f; --night-top: #1b2145; --surface: #1a2040;
-    --line: #2a3158; --text: #e8eaf6; --muted: #9aa2c8; --dim: #6b74a0;
-    --star: #f5c453; --ok: #4cc9b0;
-    --serif: Georgia, "Times New Roman", serif;
-    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  * { box-sizing: border-box; margin: 0; }
-  body {
-    color: var(--text); font-family: var(--sans); line-height: 1.65;
-    background:
-      radial-gradient(900px 500px at 50% -10%, #232a55 0%, transparent 55%),
-      linear-gradient(180deg, var(--night-top), var(--night-deep) 45%);
-    background-attachment: fixed; min-height: 100vh; padding: 0 20px;
-  }
-  main { max-width: 720px; margin: 0 auto; padding: 56px 0 90px; }
-  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-  .brand .mark { color: var(--star); font-size: 1.4rem; }
-  .brand h1 { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; letter-spacing: .01em; }
-  .lede { color: var(--muted); font-size: 1rem; margin-bottom: 8px; }
-  .updated { color: var(--dim); font-size: .82rem; margin-bottom: 34px; }
-  h2 { font-family: var(--serif); font-size: 1.18rem; font-weight: 700; color: var(--star);
-       margin: 34px 0 10px; }
-  p { margin: 10px 0; color: #d3d8f0; }
-  ul { margin: 10px 0 10px 4px; padding-left: 20px; }
-  li { margin: 7px 0; color: #d3d8f0; }
-  li b { color: var(--text); }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-          padding: 18px 22px; margin: 18px 0; }
-  .card p:first-child { margin-top: 0; } .card p:last-child { margin-bottom: 0; }
-  strong.good { color: var(--ok); }
-  a { color: var(--star); }
-  footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line);
-           color: var(--dim); font-size: .84rem; }
-  code { background: #ffffff10; padding: 1px 6px; border-radius: 5px; font-size: .88em; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <div class="brand"><span class="mark">✦</span><h1>Silsile</h1></div>
+  <div class="brand"><span class="mark">🔗</span><h1>Silsile</h1></div>
   <p class="lede">Gizlilik Politikası</p>
-  <p class="updated">Son güncelleme: 24 Temmuz 2026</p>
+  <p class="updated">Son güncelleme: 27 Temmuz 2026</p>
 
   <p>Silsile, neden-sonuç zinciri kurduran bir bilgi oyunudur. Gizliliğinize
-     önem veriyoruz: oyun, kişisel kimliğinizi tanımlayan hiçbir bilgi istemez.
-     Bu politika, oyunu oynarken hangi verilerin işlendiğini ve neden
-     işlendiğini açıklar.</p>
+     önem veriyoruz. Bu politika, oyunu oynarken hangi verilerin işlendiğini ve
+     neden işlendiğini açıklar.</p>
 
   <div class="card">
     <p><strong class="good">Kısaca:</strong> Silsile'yi oynamak için hesap
-       açmanız, e-posta veya telefon vermeniz gerekmez. Adınız, konumunuz,
-       rehberiniz veya cihaz kimliğiniz (IDFA) toplanmaz. Reklam ağı yoktur ve
-       sizi takip etmeyiz.</p>
+       açmanız gerekmez — oyunun tamamı girişsiz oynanabilir. Konumunuz,
+       rehberiniz veya reklam kimliğiniz (IDFA) hiçbir durumda toplanmaz.
+       Reklam ağı yoktur ve sizi uygulamalar arasında takip etmeyiz.
+       <b>Yalnızca isterseniz</b> Apple ile giriş yapabilirsiniz; bu durumda
+       adınız ve e-posta adresiniz işlenir (aşağıya bakınız).</p>
   </div>
 
-  <h2>Toplanan veriler</h2>
-  <p>Oyunun skor tabloları ve “oyunculara sor” gibi topluluk özellikleri
-     çalışabilsin diye şu veriler işlenir:</p>
+  <h2>Girişsiz oynarken toplananlar</h2>
+  <p>Skor tabloları ve “oyunculara sor” gibi topluluk özellikleri çalışabilsin
+     diye şu veriler işlenir:</p>
   <ul>
     <li><b>Rastgele cihaz kimliği:</b> Uygulama ilk açıldığında rastgele
         üretilen bir kimlik (<code>device_id</code>) cihazınızda saklanır. Bu
-        kimlik kişisel değildir; adınıza, e-postanıza veya Apple hesabınıza
-        bağlı değildir ve sizi bir kişi olarak tanımlamaz. Yalnızca
-        ilerlemenizi ve skorlarınızı bu cihazla ilişkilendirmek için kullanılır.</li>
+        kimlik kişisel değildir; adınıza veya e-postanıza bağlı değildir ve
+        sizi bir kişi olarak tanımlamaz. Apple'ın reklam kimliği (IDFA)
+        <b>değildir</b> ve reklam amacıyla kullanılmaz.</li>
     <li><b>Oyun içi seçimleriniz:</b> Bir halkada verdiğiniz cevaplar ve deneme
         sayısı, doğru yanıt oranlarını gösteren topluluk istatistikleri için
         anonim olarak kaydedilir.</li>
-    <li><b>Skorlar ve ilerleme:</b> Bölüm yıldızlarınız, kampanya puanınız ve
-        rekor modu skorlarınız, sıralamaları oluşturmak için kaydedilir.</li>
+    <li><b>Skorlar ve ilerleme:</b> Bölüm yıldızlarınız, puanınız ve rekor modu
+        skorlarınız, sıralamaları oluşturmak için kaydedilir.</li>
   </ul>
-  <p>Bu veriler, tek başına ya da birlikte, gerçek dünyadaki kimliğinizi
-     ortaya çıkarmaz.</p>
+  <p>Giriş yapmadığınız sürece bu veriler, tek başına ya da birlikte, gerçek
+     dünyadaki kimliğinizi ortaya çıkarmaz.</p>
+
+  <h2>Apple ile giriş (isteğe bağlı)</h2>
+  <p>Skorlarınızı cihazlar arasında taşımak ve arkadaşlarınızla yarışmak
+     isterseniz Apple ile giriş yapabilirsiniz. Bu <b>tamamen isteğe
+     bağlıdır</b>; oyunun hiçbir bölümü girişe kilitli değildir. Giriş
+     yaptığınızda:</p>
+  <ul>
+    <li><b>Adınız ve e-posta adresiniz</b> Apple tarafından bize iletilir ve
+        hesabınızla ilişkilendirilir. Apple'ın “E-postamı Gizle” özelliğini
+        seçerseniz bize yalnızca Apple'ın ürettiği yönlendirme adresi ulaşır;
+        gerçek adresinizi görmeyiz.</li>
+    <li><b>Görünen adınız</b> (adınızdan türetilir) arkadaş sıralamalarında ve
+        arkadaşlarınızın “seni geçti” bildirimlerinde gösterilir. Yalnızca
+        arkadaş olduğunuz kişiler bu adı görür.</li>
+    <li><b>Cihaz kaydınız hesabınıza aktarılır:</b> giriş öncesi biriken
+        ilerlemeniz ve skorlarınız hesabınıza bağlanır.</li>
+  </ul>
+  <p>E-posta adresiniz yalnızca hesabınızı tanımlamak ve talebiniz üzerine size
+     ulaşmak için kullanılır. Pazarlama e-postası göndermeyiz.</p>
+
+  <h2>Arkadaşlar ve sıralamalar</h2>
+  <p>Arkadaş eklemek için paylaşılan bir <b>arkadaş kodu</b> kullanılır;
+     rehberinize, kişi listenize veya sosyal medya hesaplarınıza erişmeyiz.
+     Arkadaş listeniz ve ortak sıralamalardaki skorlarınız hesabınızla birlikte
+     saklanır. Meydan okuma bağlantıları cihazdan cihaza paylaşılır ve yalnızca
+     oynanan zinciri ve skoru içerir.</p>
 
   <h2>Cihazınızda saklananlar</h2>
   <p>İlerlemeniz, canlarınız ve tercihleriniz (ör. hareket azaltma) öncelikle
@@ -92,26 +83,32 @@
   <h2>Reklam ve takip</h2>
   <p>Bu sürümde Silsile <b>reklam içermez</b> ve herhangi bir analiz/takip
      SDK'sı kullanmaz. Sizi uygulamalar veya web siteleri arasında izlemeyiz.
-     İleride reklam veya isteğe bağlı hesap girişi gibi özellikler eklenirse,
-     bu politika güncellenir ve gerekli izinler ayrıca istenir.</p>
+     İleride reklam eklenirse bu politika güncellenir ve gerekli izinler
+     ayrıca istenir.</p>
 
   <h2>Çocukların gizliliği</h2>
   <p>Oyun genel izleyici kitlesine yöneliktir ve çocuklardan bilerek kişisel
-     veri toplamaz. Toplanan hiçbir veri yaş, kimlik veya iletişim bilgisi
-     içermediğinden, oyun her yaştan oyuncu için güvenlidir.</p>
+     veri toplamaz. Girişsiz oynandığında hiçbir kişisel veri toplanmaz.</p>
 
   <h2>Haklarınız</h2>
   <p>Uygulamayı cihazınızdan silerek yerel verilerinizi dilediğiniz zaman
-     kaldırabilirsiniz. Sunucudaki anonim kayıtlarınızın silinmesini talep
-     etmek isterseniz, aşağıdaki e-posta adresinden bize ulaşın; talebinizi
-     karşılamak için ilgili cihaz kimliğini birlikte iletmeniz yeterlidir.</p>
+     kaldırabilirsiniz. <b>Hesabınızın ve sunucudaki tüm kayıtlarınızın
+     silinmesini</b> (skorlar, görünen ad, e-posta, arkadaş listesi) aşağıdaki
+     adresten talep edebilirsiniz; talebinizi en geç 30 gün içinde yerine
+     getiririz. Girişsiz oynadıysanız, silinmesini istediğiniz cihaz kimliğini
+     iletmeniz yeterlidir.</p>
 
   <h2>Değişiklikler</h2>
   <p>Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde “son
      güncelleme” tarihi yenilenir.</p>
 
   <h2>İletişim</h2>
-  <p>Gizlilikle ilgili sorularınız için: <a href="mailto:destek@silsile.app">destek@silsile.app</a></p>
+  <p>Gizlilikle ilgili sorularınız ve silme talepleriniz için:</p>
+  <p><a class="mailto" href="mailto:silsilegames@gmail.com">silsilegames@gmail.com</a></p>
+
+  <div class="nav">
+    <a href="destek.html">Destek sayfası</a>
+  </div>
 
   <footer>
     Silsile · Neden-sonuç zinciri kurma oyunu · Bu sayfa App Store gizlilik
